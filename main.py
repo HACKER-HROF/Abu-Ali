@@ -10,7 +10,7 @@ from rich.style import Style
 import pystyle
 from pystyle import Colors, Colorate
 
-from mdserge import MdSerge
+from HROF import HROF
 
 __CHANNEL_USERNAME__ = "تﻮﻤﻟا فﻭﺮﺣ"
 __GROUP_USERNAME__   = "تﻮﻤﻟا فﻭﺮﺣ"
@@ -38,7 +38,7 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name = figlet_format('MDserge', font='starwars')
+    brand_name = figlet_format('HROF', font='starwars')
     colors = [
         "rgb(255,0,0)", "rgb(255,69,0)",
     ]
