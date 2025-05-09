@@ -173,9 +173,9 @@ def banner(console):
     console.print(colorful_text)
     print(Colorate.Horizontal(Colors.yellow_to_red, '============================================================'))
     print(Colorate.Horizontal(Colors.yellow_to_red, '\t         ﺓﺍﺩﻷﺍ ﻩﺬﻫ ﻡﺍﺪﺨﺘﺳﺍ ﻞﺒﻗ تﻮﻤﻟا فﻭﺮﺣ ﻦﻣ ﺝﻭﺮﺨﻟﺍ ﻞﻴﺠﺴﺗ ﻰﺟﺮﻳ'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, '    ﺎﻫﺮﻈﺣ ﻢﺘﻴﺳﻭ ﺎﻬﺑ ﺡﻮﻤﺴﻣ ﺮﻴﻏ ﻝﻮﺻﻮﻟﺍ ﺡﺎﺘﻔﻣ ﺔﻛﺭﺎﺸﻣ'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f' ‌           ﻡﺍﺮﺠﻠﺗ: @{__CHANNEL_USERNAME__}'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'            ﻙﻮﺘﻜﻴﺗ: @{__GROUP_USERNAME__}'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, '              ﺎﻫﺮﻈﺣ ﻢﺘﻴﺳﻭ ﺎﻬﺑ ﺡﻮﻤﺴﻣ ﺮﻴﻏ ﻝﻮﺻﻮﻟﺍ ﺡﺎﺘﻔﻣ ﺔﻛﺭﺎﺸﻣ'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, f' ‌                ﻡﺍﺮﺠﻠﺗ: @{__CHANNEL_USERNAME__}'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, f'                 ﻙﻮﺘﻜﻴﺗ: @{__GROUP_USERNAME__}'))
     print(Colorate.Horizontal(Colors.yellow_to_red, '============================================================'))
 
 def load_player_data(cpm):
