@@ -207,11 +207,11 @@ def load_key_data(cpm):
     
     print(Colorate.Horizontal(Colors.yellow_to_red, '========[ تﻮﻤﻟا فﻭﺮﺣ ]========'))
     
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Access Key : {data.get("access_key")}.'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻝﻮﺻﻮﻟﺍ ﺡﺎﺘﻔﻣ : {data.get("access_key")}.'))
     
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Telegram ID: {data.get("telegram_id")}.'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻡﺍﺮﺠﻠﺘﻟﺍ ﻑﺮﻌﻣ: {data.get("telegram_id")}.'))
     
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Balance $  : {(data.get("coins") if not data.get("is_unlimited") else "Unlimited")}.'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻥﺯﺍﻮﺗ $  : {(data.get("coins") if not data.get("is_unlimited") else "ﺩﻭﺪﺤﻣ ﺮﻴﻏ")}.'))
         
     
 
@@ -322,7 +322,7 @@ if __name__ == "__main__":
             
             print(Colorate.Horizontal(Colors.yellow_to_red, '===============[ تﻮﻤﻟا فﻭﺮﺣ  ]==============='))
             
-            service = IntPrompt.ask(f"[bold][?] Select a Service [red][1-{choices[-1]} or 0][/red][/bold]", choices=choices, show_choices=False)
+            service = IntPrompt.ask(f"[bold][?] ﺔﻣﺪﺨﻟﺍ ﺮﺘﺧﺍ [red][1-{choices[-1]} or 0][/red][/bold]", choices=choices, show_choices=False)
             
             print(Colorate.Horizontal(Colors.yellow_to_red, '===============[ تﻮﻤﻟا فﻭﺮﺣ ]==============='))
             
