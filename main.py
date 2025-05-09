@@ -184,20 +184,20 @@ def load_player_data(cpm):
         data = response.get('data')
         if 'floats' in data and 'localID' in data and 'money' in data and 'coin' in data:
         
-            print(Colorate.Horizontal(Colors.yellow_to_red, '==========[ PLAYER DETAILS ]=========='))
+            print(Colorate.Horizontal(Colors.yellow_to_red, '==========[ ﺐﻋﻼﻟﺍ ﻞﻴﺻﺎﻔﺗ ]=========='))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'Name   : {(data.get("Name") if "Name" in data else "UNDEFINED")}.'))
+            print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻢﺳﺍ   : {(data.get("Name") if "Name" in data else "UNDEFINED")}.'))
                 
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'LocalID: {data.get("localID")}.'))
+            print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻲﻠﺤﻣ ﻑﺮﻌﻣ: {data.get("localID")}.'))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'Money  : {data.get("money")}.'))
+            print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻝﺎﻣ  : {data.get("money")}.'))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'Coins  : {data.get("coin")}.'))
+            print(Colorate.Horizontal(Colors.yellow_to_red, f'ﺔﻴﻧﺪﻌﻣ ﺕﻼﻤﻋ  : {data.get("coin")}.'))
             
         else:
-            print(Colorate.Horizontal(Colors.yellow_to_red, '! ERROR: new accounts most be signed-in to the game at least once !.'))
+            print(Colorate.Horizontal(Colors.yellow_to_red, '! ﺄﻄﺧ: ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺓﺮﻣ ﺔﺒﻌﻠﻟﺍ ﻰﻟﺇ ﻝﻮﺧﺪﻟﺍ ﻞﻴﺠﺴﺗ ﺓﺪﻳﺪﺠﻟﺍ ﺕﺎﺑﺎﺴﺤﻟﺍ ﻰﻠﻋ ﺐﺠﻳ !.'))
     else:
-        print(Colorate.Horizontal(Colors.yellow_to_red, '! ERROR: seems like your login is not properly set !.'))
+        print(Colorate.Horizontal(Colors.yellow_to_red, '! ﺄﻄﺧ: ﺢﻴﺤﺻ ﻞﻜﺸﺑ ﻪﻄﺒﺿ ﻢﺘﻳ ﻢﻟ ﻚﺑ ﺹﺎﺨﻟﺍ ﻝﻮﺧﺪﻟﺍ ﻞﻴﺠﺴﺗ ﻥﺃ ﻭﺪﺒﻳ !.'))
         exit(1)
 
 
@@ -227,9 +227,9 @@ def load_client_details():
     response = requests.get("http://ip-api.com/json")
     data = response.json()
     print(Colorate.Horizontal(Colors.yellow_to_red, '=============[ تﻮﻤﻟا فﻭﺮﺣ ]============='))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Ip Address : {data.get("query")}.'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Location   : {data.get("city")} {data.get("regionName")} {data.get("countryCode")}.'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'Country    : {data.get("country")} {data.get("zip")}.'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, f'PI ﻥﺍﻮﻨﻋ : {data.get("query")}.'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻊﻗﻮﻣ   : {data.get("city")} {data.get("regionName")} {data.get("countryCode")}.'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, f'ﺔﻟﻭﺩ    : {data.get("country")} {data.get("zip")}.'))
     print(Colorate.Horizontal(Colors.yellow_to_red, '===============[ تﻮﻤﻟا فﻭﺮﺣ ]==============='))
 
 def interpolate_color(start_color, end_color, fraction):
