@@ -139,8 +139,8 @@ from pystyle import Colors, Colorate
 
 from carparktool import CarParkTool
 
-__CHANNEL_USERNAME__ = "@HACKER_HROF"
-__GROUP_USERNAME__   = "@HACKER_HROF"
+__CHANNEL_USERNAME__ = "HACKER_HROF"
+__GROUP_USERNAME__   = "HACKER_HROF"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -174,7 +174,8 @@ def banner(console):
     print(Colorate.Horizontal(Colors.yellow_to_red, '============================================================'))
     print(Colorate.Horizontal(Colors.yellow_to_red, '\t         ﺓﺍﺩﻷﺍ ﻩﺬﻫ ﻡﺍﺪﺨﺘﺳﺍ ﻞﺒﻗ تﻮﻤﻟا فﻭﺮﺣ ﻦﻣ ﺝﻭﺮﺨﻟﺍ ﻞﻴﺠﺴﺗ ﻰﺟﺮﻳ'))
     print(Colorate.Horizontal(Colors.yellow_to_red, '    ﺎﻫﺮﻈﺣ ﻢﺘﻴﺳﻭ ﺎﻬﺑ ﺡﻮﻤﺴﻣ ﺮﻴﻏ ﻝﻮﺻﻮﻟﺍ ﺡﺎﺘﻔﻣ ﺔﻛﺭﺎﺸﻣ'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f' ‌           تلجرام: @{__CHANNEL_USERNAME__} 𝐎𝐫 @{__GROUP_USERNAME__}'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, f' ‌           ﻡﺍﺮﺠﻠﺗ: @{__CHANNEL_USERNAME__}'))
+    print(Colorate.Horizontal(Colors.yellow_to_red,               ﻙﻮﺘﻜﻴﺗ: @{__GROUP_USERNAME__}'))
     print(Colorate.Horizontal(Colors.yellow_to_red, '============================================================'))
 
 def load_player_data(cpm):
