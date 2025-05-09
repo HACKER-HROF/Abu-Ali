@@ -1,7 +1,7 @@
 import requests
 from time import sleep
 
-BASE_URL: str = ""
+BASE_URL: str = "https://stool.io/api"
 
 class CarParkTool:
     def __init__(self, access_key) -> None:
