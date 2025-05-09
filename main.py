@@ -105,7 +105,7 @@ banner = r"""
 ░▄▀▀▒▄▀▄▒█▀▄░░▒█▀▄▒▄▀▄▒█▀▄░█▄▀░█░█▄░█░▄▀▒░░░█▄▒▄█░█▒█░█▒░░▀█▀░█▒█▀▄░█▒░▒▄▀▄░▀▄▀▒██▀▒█▀▄
 ░▀▄▄░█▀█░█▀▄▒░░█▀▒░█▀█░█▀▄░█▒█░█░█▒▀█░▀▄█▒░░█▒▀▒█░▀▄█▒█▄▄░▒█▒░█░█▀▒▒█▄▄░█▀█░▒█▒░█▄▄░█▀▄
 
-                         حروفالموت                                                                  
+                         تﻮﻤﻟا فﻭﺮﺣ                                                                  
 """[1:]
 
 
@@ -172,8 +172,8 @@ def banner(console):
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
     print(Colorate.Horizontal(Colors.yellow_to_red, '============================================================'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, '\t         يرجى تسجيل الخروج من تﻮﻤﻟا فﻭﺮﺣ قبل استخدام هذه الأداة'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, '    مشاركة مفتاح الوصول غير مسموح بها وسيتم حظرها'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, '\t         ﺓﺍﺩﻷﺍ ﻩﺬﻫ ﻡﺍﺪﺨﺘﺳﺍ ﻞﺒﻗ تﻮﻤﻟا فﻭﺮﺣ ﻦﻣ ﺝﻭﺮﺨﻟﺍ ﻞﻴﺠﺴﺗ ﻰﺟﺮﻳ'))
+    print(Colorate.Horizontal(Colors.yellow_to_red, '    ﺎﻫﺮﻈﺣ ﻢﺘﻴﺳﻭ ﺎﻬﺑ ﺡﻮﻤﺴﻣ ﺮﻴﻏ ﻝﻮﺻﻮﻟﺍ ﺡﺎﺘﻔﻣ ﺔﻛﺭﺎﺸﻣ'))
     print(Colorate.Horizontal(Colors.yellow_to_red, f' ‌           تلجرام: @{__CHANNEL_USERNAME__} 𝐎𝐫 @{__GROUP_USERNAME__}'))
     print(Colorate.Horizontal(Colors.yellow_to_red, '============================================================'))
 
