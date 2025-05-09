@@ -317,7 +317,7 @@ if __name__ == "__main__":
             print(Colorate.Horizontal(Colors.yellow_to_red, '{27}: ﻙﺮﺤﻣ ﺺﺼﺨﻣ                   2.500'))
             print(Colorate.Horizontal(Colors.yellow_to_red, '{28}: ﺔﺼﺼﺨﻣ ﺔﻳﻭﺍﺯ                 1.500'))
             print(Colorate.Horizontal(Colors.yellow_to_red, '{29}: ﺺﺼﺨﻣ ﺕﺍﺭﺎﻃﺇ ﻕﺭﺎﺣ            1.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{30}: ﺔﺼﺼﺨﻤﻟﺍ ﺕﺍﺭﺎﻴﺴﻟﺍ ﻝﺎﻴ          2.000'))
+            print(Colorate.Horizontal(Colors.yellow_to_red, '{30}: ﺔﺼﺼﺨﻣ ﺓﺭﺎﻴﺳ ﺔﻓﺎﺴﻣ          2.000'))
             print(Colorate.Horizontal(Colors.yellow_to_red, '{31}: ﺔﺼﺼﺨﻤﻟﺍ ﺓﺭﺎﻴﺴﻟﺍ ﻞﻣﺍﺮﻓ          2.000'))
             print(Colorate.Horizontal(Colors.yellow_to_red, '{0} : ﺝﻭﺮﺧ'))
             
