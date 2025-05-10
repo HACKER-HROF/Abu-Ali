@@ -106,7 +106,7 @@ banner = r"""
 ░▀▄▄░█▀█░█▀▄▒░░█▀▒░█▀█░█▀▄░█▒█░█░█▒▀█░▀▄█▒░░█▒▀▒█░▀▄█▒█▄▄░▒█▒░█░█▀▒▒█▄▄░█▀█░▒█▒░█▄▄░█▀▄
 
                          ░█▄█▒█▀▄░▄▀▄▒█▀
-                         ▒█▒█░█▀▄░▀▄▀░█▀            blue                                                        
+                         ▒█▒█░█▀▄░▀▄▀░█▀                                                                    
 """[1:]
 
 
@@ -168,7 +168,7 @@ def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
     brand_name = figlet_format('HROF', font='big')
     colors = [
-        "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
+        "rgb(255,0,0)", 
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
