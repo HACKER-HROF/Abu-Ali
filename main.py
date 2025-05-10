@@ -110,7 +110,7 @@ banner = r"""
 """[1:]
 
 
-pyAnime.Fade(pyCenter.Center(banner), pyColors.red_to_yellow, pyColorate.Vertical, enter=True)
+pyAnime.Fade(pyCenter.Center(banner), pyColors.red_to_Blue, pyColorate.Vertical, enter=True)
 
 
 #pyAnime.Fade(pyCenter.Center(text), pyColors.purple_to_red, pyColorate.Vertical, enter=True)
@@ -172,12 +172,12 @@ def banner(console):
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
-    print(Colorate.Horizontal(Colors.yellow_to_red, '============================================================'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, '\t         ﺓﺍﺩﻷﺍ ﻩﺬﻫ ﻡﺍﺪﺨﺘﺳﺍ ﻞﺒﻗ تﻮﻤﻟا فﻭﺮﺣ ﻦﻣ ﺝﻭﺮﺨﻟﺍ ﻞﻴﺠﺴﺗ ﻰﺟﺮﻳ'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, '              ﺎﻫﺮﻈﺣ ﻢﺘﻴﺳﻭ ﺎﻬﺑ ﺡﻮﻤﺴﻣ ﺮﻴﻏ ﻝﻮﺻﻮﻟﺍ ﺡﺎﺘﻔﻣ ﺔﻛﺭﺎﺸﻣ'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f' ‌                ﻡﺍﺮﺠﻠﺗ: @{__CHANNEL_USERNAME__}'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'                 ﻙﻮﺘﻜﻴﺗ: @{__GROUP_USERNAME__}'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, '============================================================'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, '============================================================'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, '\t         ﺓﺍﺩﻷﺍ ﻩﺬﻫ ﻡﺍﺪﺨﺘﺳﺍ ﻞﺒﻗ تﻮﻤﻟا فﻭﺮﺣ ﻦﻣ ﺝﻭﺮﺨﻟﺍ ﻞﻴﺠﺴﺗ ﻰﺟﺮﻳ'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, '              ﺎﻫﺮﻈﺣ ﻢﺘﻴﺳﻭ ﺎﻬﺑ ﺡﻮﻤﺴﻣ ﺮﻴﻏ ﻝﻮﺻﻮﻟﺍ ﺡﺎﺘﻔﻣ ﺔﻛﺭﺎﺸﻣ'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, f' ‌                ﻡﺍﺮﺠﻠﺗ: @{__CHANNEL_USERNAME__}'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, f'                 ﻙﻮﺘﻜﻴﺗ: @{__GROUP_USERNAME__}'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, '============================================================'))
 
 def load_player_data(cpm):
     response = cpm.get_player_data()
@@ -185,20 +185,20 @@ def load_player_data(cpm):
         data = response.get('data')
         if 'floats' in data and 'localID' in data and 'money' in data and 'coin' in data:
         
-            print(Colorate.Horizontal(Colors.yellow_to_red, '==========[ ﺐﻋﻼﻟﺍ ﻞﻴﺻﺎﻔﺗ ]=========='))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '==========[ ﺐﻋﻼﻟﺍ ﻞﻴﺻﺎﻔﺗ ]=========='))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻢﺳﺍ   : {(data.get("Name") if "Name" in data else "UNDEFINED")}.'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, f'ﻢﺳﺍ   : {(data.get("Name") if "Name" in data else "UNDEFINED")}.'))
                 
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻲﻠﺤﻣ ﻑﺮﻌﻣ: {data.get("localID")}.'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, f'ﻲﻠﺤﻣ ﻑﺮﻌﻣ: {data.get("localID")}.'))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻝﺎﻣ  : {data.get("money")}.'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, f'ﻝﺎﻣ  : {data.get("money")}.'))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, f'ﺔﻴﻧﺪﻌﻣ ﺕﻼﻤﻋ  : {data.get("coin")}.'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, f'ﺔﻴﻧﺪﻌﻣ ﺕﻼﻤﻋ  : {data.get("coin")}.'))
             
         else:
-            print(Colorate.Horizontal(Colors.yellow_to_red, '! ﺄﻄﺧ: ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺓﺮﻣ ﺔﺒﻌﻠﻟﺍ ﻰﻟﺇ ﻝﻮﺧﺪﻟﺍ ﻞﻴﺠﺴﺗ ﺓﺪﻳﺪﺠﻟﺍ ﺕﺎﺑﺎﺴﺤﻟﺍ ﻰﻠﻋ ﺐﺠﻳ !.'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '! ﺄﻄﺧ: ﻞﻗﻷﺍ ﻰﻠﻋ ﺓﺪﺣﺍﻭ ﺓﺮﻣ ﺔﺒﻌﻠﻟﺍ ﻰﻟﺇ ﻝﻮﺧﺪﻟﺍ ﻞﻴﺠﺴﺗ ﺓﺪﻳﺪﺠﻟﺍ ﺕﺎﺑﺎﺴﺤﻟﺍ ﻰﻠﻋ ﺐﺠﻳ !.'))
     else:
-        print(Colorate.Horizontal(Colors.yellow_to_red, '! ﺄﻄﺧ: ﺢﻴﺤﺻ ﻞﻜﺸﺑ ﻪﻄﺒﺿ ﻢﺘﻳ ﻢﻟ ﻚﺑ ﺹﺎﺨﻟﺍ ﻝﻮﺧﺪﻟﺍ ﻞﻴﺠﺴﺗ ﻥﺃ ﻭﺪﺒﻳ !.'))
+        print(Colorate.Horizontal(Colors.Blue_to_red, '! ﺄﻄﺧ: ﺢﻴﺤﺻ ﻞﻜﺸﺑ ﻪﻄﺒﺿ ﻢﺘﻳ ﻢﻟ ﻚﺑ ﺹﺎﺨﻟﺍ ﻝﻮﺧﺪﻟﺍ ﻞﻴﺠﺴﺗ ﻥﺃ ﻭﺪﺒﻳ !.'))
         exit(1)
 
 
@@ -206,13 +206,13 @@ def load_key_data(cpm):
 
     data = cpm.get_key_data()
     
-    print(Colorate.Horizontal(Colors.yellow_to_red, '========[ تﻮﻤﻟا فﻭﺮﺣ ]========'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, '========[ تﻮﻤﻟا فﻭﺮﺣ ]========'))
     
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻝﻮﺻﻮﻟﺍ ﺡﺎﺘﻔﻣ : {data.get("access_key")}.'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, f'ﻝﻮﺻﻮﻟﺍ ﺡﺎﺘﻔﻣ : {data.get("access_key")}.'))
     
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻡﺍﺮﺠﻠﺘﻟﺍ ﻑﺮﻌﻣ: {data.get("telegram_id")}.'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, f'ﻡﺍﺮﺠﻠﺘﻟﺍ ﻑﺮﻌﻣ: {data.get("telegram_id")}.'))
     
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻥﺯﺍﻮﺗ $  : {(data.get("coins") if not data.get("is_unlimited") else "ﺩﻭﺪﺤﻣ ﺮﻴﻏ")}.'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, f'ﻥﺯﺍﻮﺗ $  : {(data.get("coins") if not data.get("is_unlimited") else "ﺩﻭﺪﺤﻣ ﺮﻴﻏ")}.'))
         
     
 
@@ -227,11 +227,11 @@ def prompt_valid_value(content, tag, password=False):
 def load_client_details():
     response = requests.get("http://ip-api.com/json")
     data = response.json()
-    print(Colorate.Horizontal(Colors.yellow_to_red, '=============[ تﻮﻤﻟا فﻭﺮﺣ ]============='))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'PI ﻥﺍﻮﻨﻋ : {data.get("query")}.'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'ﻊﻗﻮﻣ   : {data.get("city")} {data.get("regionName")} {data.get("countryCode")}.'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, f'ﺔﻟﻭﺩ    : {data.get("country")} {data.get("zip")}.'))
-    print(Colorate.Horizontal(Colors.yellow_to_red, '===============[ تﻮﻤﻟا فﻭﺮﺣ ]==============='))
+    print(Colorate.Horizontal(Colors.Blue_to_red, '=============[ تﻮﻤﻟا فﻭﺮﺣ ]============='))
+    print(Colorate.Horizontal(Colors.Blue_to_red, f'PI ﻥﺍﻮﻨﻋ : {data.get("query")}.'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, f'ﻊﻗﻮﻣ   : {data.get("city")} {data.get("regionName")} {data.get("countryCode")}.'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, f'ﺔﻟﻭﺩ    : {data.get("country")} {data.get("zip")}.'))
+    print(Colorate.Horizontal(Colors.Blue_to_red, '===============[ تﻮﻤﻟا فﻭﺮﺣ ]==============='))
 
 def interpolate_color(start_color, end_color, fraction):
     start_rgb = tuple(int(start_color[i:i+2], 16) for i in (1, 3, 5))
@@ -263,24 +263,24 @@ if __name__ == "__main__":
         login_response = cpm.login(acc_email, acc_password)
         if login_response != 0:
             if login_response == 100:
-                print(Colorate.Horizontal(Colors.yellow_to_red, 'ﺏﺎﺴﺤﻟﺍ ﻰﻠﻋ ﺭﻮﺜﻌﻟﺍ ﻢﺘﻳ ﻢﻟ.'))
+                print(Colorate.Horizontal(Colors.Blue_to_red, 'ﺏﺎﺴﺤﻟﺍ ﻰﻠﻋ ﺭﻮﺜﻌﻟﺍ ﻢﺘﻳ ﻢﻟ.'))
                 sleep(2)
                 continue
             elif login_response == 101:
-                print(Colorate.Horizontal(Colors.yellow_to_red, 'ﺔﺌﻃﺎﺧ ﺭﻭﺮﻤﻟﺍ ﺔﻤﻠﻛ.'))
+                print(Colorate.Horizontal(Colors.Blue_to_red, 'ﺔﺌﻃﺎﺧ ﺭﻭﺮﻤﻟﺍ ﺔﻤﻠﻛ.'))
                 sleep(2)
                 continue
             elif login_response == 103:
-                print(Colorate.Horizontal(Colors.yellow_to_red, 'ﺢﻟﺎﺻ ﺮﻴﻏ ﻝﻮﺻﻮﻟﺍ ﺡﺎﺘﻔﻣ.'))
+                print(Colorate.Horizontal(Colors.Blue_to_red, 'ﺢﻟﺎﺻ ﺮﻴﻏ ﻝﻮﺻﻮﻟﺍ ﺡﺎﺘﻔﻣ.'))
                 sleep(2)
                 continue
             else:
-                print(Colorate.Horizontal(Colors.yellow_to_red, 'ﺔﻴﻧﺎﺛ ﻝﻭﺎﺣ.'))
-                print(Colorate.Horizontal(Colors.yellow_to_red, '! ﺔﻴﻧﺎﺛ ﻝﻭﺎﺣ: ﻝﻮﻘﺤﻟﺍ ﺀﻞﻣ ﻦﻣ ﺪﻛﺄﺗ !.'))
+                print(Colorate.Horizontal(Colors.Blue_to_red, 'ﺔﻴﻧﺎﺛ ﻝﻭﺎﺣ.'))
+                print(Colorate.Horizontal(Colors.Blue_to_red, '! ﺔﻴﻧﺎﺛ ﻝﻭﺎﺣ: ﻝﻮﻘﺤﻟﺍ ﺀﻞﻣ ﻦﻣ ﺪﻛﺄﺗ !.'))
                 sleep(2)
                 continue
         else:
-            print(Colorate.Horizontal(Colors.yellow_to_red, 'ﺢﺟﺎﻧ.'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, 'ﺢﺟﺎﻧ.'))
             sleep(2)
         while True:
             banner(console)
@@ -288,70 +288,70 @@ if __name__ == "__main__":
             load_key_data(cpm)
             load_client_details()
             choices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{01}: ﻝﺎﻤﻟﺍ ﺓﺩﺎﻳﺯ               1.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{02}: ﺔﻴﻧﺪﻌﻤﻟﺍ ﺕﻼﻤﻌﻟﺍ ﺓﺩﺎﻳﺯ     4.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{03}: ﻚﻠﻤﻟﺍ ﺔﺒﺗﺭ                8.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{04}: ﻑﺮﻌﻤﻟﺍ ﺮﻴﻴﻐﺗ              4.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{05}: ﻢﺳﻻﺍ ﺮﻴﻴﻐﺗ                 100'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{06}: ﺡﺰﻗ ﺱﻮﻗ ﻢﺳﻻﺍ ﺮﻴﻴﻐﺗ         100'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{07}: ﺕﺍﺭﺎﻴﺴﻟﺍ ﻡﺎﻗﺭﺃ ﺕﺎﺣﻮﻟ         2.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{08}:ﺏﺎﺴﺤﻟﺍ ﻑﺬﺣ        ﺎﻧﺎﺠﻣ'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{09}: ﺏﺎﺴﺤﻟﺍ ﻞﻴﺠﺴﺗ              ﺎﻧﺎﺠﻣ'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{10}: ﺀﺎﻗﺪﺻﻷﺍ ﻑﺬﺣ               500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{11}: ﺔﻋﻮﻓﺪﻤﻟﺍ ﺕﺍﺭﺎﻴﺴﻟﺍ ﺢﺘﻓ      5.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{12}: ﺕﺍﺭﺎﻴﺴﻟﺍ ﻊﻴﻤﺟ ﺢﺘﻓ          6.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{13}: ﺕﺍﺭﺎﻴﺴﻟﺍ ﻲﻓ ﺭﺍﺬﻧﻹﺍ ﺕﺍﺭﺎﻔﺻ ﻊﻴﻤﺟ ﺢﺘﻓ          3.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{14}: ﻉﻮﻓﺪﻣ ﻙﺮﺤﻣ ﺢﺘﻓ             4.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{15}: ﻕﺍﻮﺑﻷﺍ ﻊﻴﻤﺟ ﺢﺘﻓ            3.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{16}: ﺭﺮﻀﻟﺍ ﻞﻴﻄﻌﺗ ﻞﻔﻗ ﺀﺎﻐﻟﺇ      3.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{17}: ﺩﻭﺪﺤﻣ ﺮﻴﻏ ﺩﻮﻗﻭ ﺢﺘﻓ        3.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{18}: ﻝﺰﻨﻤﻟﺍ ﺢﺘﻓ 3              4.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{19}: ﻥﺎﺧﺪﻟﺍ ﺢﺘﻓ                4.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{20}: ﺕﻼﺠﻌﻟﺍ ﺢﺘﻓ                4.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{21}: ﺔﻛﺮﺤﺘﻤﻟﺍ ﻡﻮﺳﺮﻟﺍ ﺢﺘﻓ        2.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{22}: ﻡ ﺕﺍﺪﻌﻤﻟﺍ ﺢﺘﻓ               3.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{23}: ﻑ ﺕﺍﺪﻌﻤﻟﺍ ﺢﺘﻓ               3.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{24}: ﺯﻮﻔﻟﺍ ﻕﺎﺒﺳ ﺮﻴﻴﻐﺗ             1.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{25}: ﺮﺴﺨﻳ ﺮﻴﻴﻐﺘﻟﺍ ﻕﺎﺒﺳ            1.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{26}: ﺏﺎﺴﺤﻟﺍ ﺥﺎﺴﻨﺘﺳﺍ              7.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{27}: ﻙﺮﺤﻣ ﺺﺼﺨﻣ                   2.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{28}: ﺔﺼﺼﺨﻣ ﺔﻳﻭﺍﺯ                 1.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{29}: ﺺﺼﺨﻣ ﺕﺍﺭﺎﻃﺇ ﻕﺭﺎﺣ            1.500'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{30}: ﺔﺼﺼﺨﻣ ﺓﺭﺎﻴﺳ ﺔﻓﺎﺴﻣ          2.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{31}: ﺔﺼﺼﺨﻤﻟﺍ ﺓﺭﺎﻴﺴﻟﺍ ﻞﻣﺍﺮﻓ          2.000'))
-            print(Colorate.Horizontal(Colors.yellow_to_red, '{0} : ﺝﻭﺮﺧ'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{01}: ﻝﺎﻤﻟﺍ ﺓﺩﺎﻳﺯ               1.500'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{02}: ﺔﻴﻧﺪﻌﻤﻟﺍ ﺕﻼﻤﻌﻟﺍ ﺓﺩﺎﻳﺯ     4.500'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{03}: ﻚﻠﻤﻟﺍ ﺔﺒﺗﺭ                8.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{04}: ﻑﺮﻌﻤﻟﺍ ﺮﻴﻴﻐﺗ              4.500'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{05}: ﻢﺳﻻﺍ ﺮﻴﻴﻐﺗ                 100'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{06}: ﺡﺰﻗ ﺱﻮﻗ ﻢﺳﻻﺍ ﺮﻴﻴﻐﺗ         100'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{07}: ﺕﺍﺭﺎﻴﺴﻟﺍ ﻡﺎﻗﺭﺃ ﺕﺎﺣﻮﻟ         2.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{08}:ﺏﺎﺴﺤﻟﺍ ﻑﺬﺣ        ﺎﻧﺎﺠﻣ'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{09}: ﺏﺎﺴﺤﻟﺍ ﻞﻴﺠﺴﺗ              ﺎﻧﺎﺠﻣ'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{10}: ﺀﺎﻗﺪﺻﻷﺍ ﻑﺬﺣ               500'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{11}: ﺔﻋﻮﻓﺪﻤﻟﺍ ﺕﺍﺭﺎﻴﺴﻟﺍ ﺢﺘﻓ      5.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{12}: ﺕﺍﺭﺎﻴﺴﻟﺍ ﻊﻴﻤﺟ ﺢﺘﻓ          6.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{13}: ﺕﺍﺭﺎﻴﺴﻟﺍ ﻲﻓ ﺭﺍﺬﻧﻹﺍ ﺕﺍﺭﺎﻔﺻ ﻊﻴﻤﺟ ﺢﺘﻓ          3.500'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{14}: ﻉﻮﻓﺪﻣ ﻙﺮﺤﻣ ﺢﺘﻓ             4.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{15}: ﻕﺍﻮﺑﻷﺍ ﻊﻴﻤﺟ ﺢﺘﻓ            3.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{16}: ﺭﺮﻀﻟﺍ ﻞﻴﻄﻌﺗ ﻞﻔﻗ ﺀﺎﻐﻟﺇ      3.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{17}: ﺩﻭﺪﺤﻣ ﺮﻴﻏ ﺩﻮﻗﻭ ﺢﺘﻓ        3.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{18}: ﻝﺰﻨﻤﻟﺍ ﺢﺘﻓ 3              4.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{19}: ﻥﺎﺧﺪﻟﺍ ﺢﺘﻓ                4.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{20}: ﺕﻼﺠﻌﻟﺍ ﺢﺘﻓ                4.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{21}: ﺔﻛﺮﺤﺘﻤﻟﺍ ﻡﻮﺳﺮﻟﺍ ﺢﺘﻓ        2.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{22}: ﻡ ﺕﺍﺪﻌﻤﻟﺍ ﺢﺘﻓ               3.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{23}: ﻑ ﺕﺍﺪﻌﻤﻟﺍ ﺢﺘﻓ               3.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{24}: ﺯﻮﻔﻟﺍ ﻕﺎﺒﺳ ﺮﻴﻴﻐﺗ             1.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{25}: ﺮﺴﺨﻳ ﺮﻴﻴﻐﺘﻟﺍ ﻕﺎﺒﺳ            1.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{26}: ﺏﺎﺴﺤﻟﺍ ﺥﺎﺴﻨﺘﺳﺍ              7.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{27}: ﻙﺮﺤﻣ ﺺﺼﺨﻣ                   2.500'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{28}: ﺔﺼﺼﺨﻣ ﺔﻳﻭﺍﺯ                 1.500'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{29}: ﺺﺼﺨﻣ ﺕﺍﺭﺎﻃﺇ ﻕﺭﺎﺣ            1.500'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{30}: ﺔﺼﺼﺨﻣ ﺓﺭﺎﻴﺳ ﺔﻓﺎﺴﻣ          2.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{31}: ﺔﺼﺼﺨﻤﻟﺍ ﺓﺭﺎﻴﺴﻟﺍ ﻞﻣﺍﺮﻓ          2.000'))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '{0} : ﺝﻭﺮﺧ'))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, '===============[ تﻮﻤﻟا فﻭﺮﺣ  ]==============='))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '===============[ تﻮﻤﻟا فﻭﺮﺣ  ]==============='))
             
             service = IntPrompt.ask(f"[bold][?] ﺔﻣﺪﺨﻟﺍ ﺮﺘﺧﺍ [red][1-{choices[-1]} or 0][/red][/bold]", choices=choices, show_choices=False)
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, '===============[ تﻮﻤﻟا فﻭﺮﺣ ]==============='))
+            print(Colorate.Horizontal(Colors.Blue_to_red, '===============[ تﻮﻤﻟا فﻭﺮﺣ ]==============='))
             
             if service == 0: # Exit
-                print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channel: @{__CHANNEL_USERNAME__}.'))
+                print(Colorate.Horizontal(Colors.Blue_to_red, f'Thank You for using our tool, please join our telegram channel: @{__CHANNEL_USERNAME__}.'))
             elif service == 1: # Increase Money
-                print(Colorate.Horizontal(Colors.yellow_to_red, '[?] Insert how much money do you want.'))
+                print(Colorate.Horizontal(Colors.Blue_to_red, '[?] Insert how much money do you want.'))
                 amount = IntPrompt.ask("[?] Amount")
                 console.print("[%] Saving your data: ", end=None)
                 if amount > 0 and amount <= 500000000000000000000000000000000:
                     if cpm.set_player_money(amount):
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'ﺢﺟﺎﻧ'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, '======================================'))
+                        print(Colorate.Horizontal(Colors.Blue_to_red, 'ﺢﺟﺎﻧ'))
+                        print(Colorate.Horizontal(Colors.Blue_to_red, '======================================'))
                         answ = Prompt.ask("[?] Do You want to Exit ?", choices=["y", "n"], default="n")
-                        if answ == "y": print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
+                        if answ == "y": print(Colorate.Horizontal(Colors.Blue_to_red, f'Thank You for using our tool, please join our telegram channe: @{__CHANNEL_USERNAME__}.'))
                         else: continue
                     else:
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                        print(Colorate.Horizontal(Colors.yellow_to_red, 'Please try again.'))
+                        print(Colorate.Horizontal(Colors.Blue_to_red, 'FAILED.'))
+                        print(Colorate.Horizontal(Colors.Blue_to_red, 'Please try again.'))
                         sleep(2)
                         continue
                 else:
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.yellow_to_red, 'Please use valid values.'))
+                    print(Colorate.Horizontal(Colors.Blue_to_red, 'FAILED.'))
+                    print(Colorate.Horizontal(Colors.Blue_to_red, 'Please use valid values.'))
                     sleep(2)
                     continue
             elif service == 2: # Increase Coins
-                print(Colorate.Horizontal(Colors.yellow_to_red, '[?] Insert how much coins do you want.'))
+                print(Colorate.Horizontal(Colors.Blue_to_red, '[?] Insert how much coins do you want.'))
                 amount = IntPrompt.ask("[?] Amount")
                 console.print("[%] Saving your data: ", end=None)
                 if amount > 0 and amount <= 500000000000000:
