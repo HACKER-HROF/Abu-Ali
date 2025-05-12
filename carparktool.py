@@ -3,7 +3,7 @@ from time import sleep
 
 BASE_URL: str = "https://popstool.io/api"
 
-class CarParkTool:
+class Egypt:
     def __init__(self, access_key) -> None:
         self.auth_token = None
         self.access_key = access_key
